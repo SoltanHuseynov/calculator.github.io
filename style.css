@@ -1,0 +1,54 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: rgba(10, 200, 342, 234);
+}
+
+.display {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	
+}
+.display{
+	min-height: 100vh;
+	grid-template-columns:repeat(4, 70px);
+	grid-template-rows: minmax(80px,auto) repeat(5, 70px);
+}
+
+
+.display > button{
+
+	border: 1px solid white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: sans-serif;
+	
+
+}
+.display > button:hover{
+	background:#6495ED;
+
+}
+.item1{
+	grid-column: span 2;
+}
+.number-arie{
+	grid-column: 1/-1;
+	background-color: rgba(0, 0, 0, .75);
+  	display: flex;
+  	align-items: flex-end;
+  	justify-content: space-around;
+  	flex-direction: column;
+  	padding: 10px;
+  	border: 1px solid white;
+  	font-family: sans-serif;
+  	font-size: 2.5rem;
+  	color: white;
+  	word-wrap: break-word;
+  	word-break: break-all;
+}
+.text1{
+	color:#6495ED;
+	font-size: 2rem;
+}
